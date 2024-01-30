@@ -11,10 +11,7 @@ const App = {
     const { web3 } = this;
 
     try {
-      /* Get the network we are connected to and then read the build/contracts/Voting.json and instantiate a contract object to use
-      */
-
-      // 
+      /* Obtenez le réseau auquel nous sommes connectés, puis lisez le build/contracts/Voting.json et instanciez un objet contrat à utiliser */
       const networkId = 5777;
       const deployedNetwork = votingArtifact.networks[networkId];
       this.voting = new web3.eth.Contract(
@@ -22,7 +19,7 @@ const App = {
         deployedNetwork.address,
       );
 
-      // get accounts
+      // obtenir des comptes
       const accounts = await web3.eth.getAccounts();
       this.account = accounts[0];
 
@@ -52,10 +49,10 @@ const App = {
     const { totalVotesFor, voteForCandidate } = this.voting.methods;
 
 
-    /* Voting.deployed() returns an instance of the contract. Every call
-     * in Truffle returns a promise which is why we have used then()
-     * everywhere we have a transaction call
-     */
+    /* Voting.deployed() renvoie une instance du contrat. Chaque appel
+    * dans Truffle renvoie une promesse, c'est pourquoi nous avons utilisé then()
+    * partout où nous avons un appel de transaction
+    */
     await voteForCandidate(this.web3.utils.asciiToHex(candidateName)).send({ gas: 200000, from: this.account });
     let div_id = candidates[candidateName];
     var count = await totalVotesFor(this.web3.utils.asciiToHex(candidateName)).call();
@@ -69,9 +66,9 @@ window.App = App;
 
 window.addEventListener("load", function () {
   if (window.ethereum) {
-    // use MetaMask's provider
+    // utiliser le fournisseur de MetaMask
     App.web3 = new Web3(window.ethereum);
-    window.ethereum.enable(); // get permission to access accounts
+    window.ethereum.enable(); // obtenir la permission d'accéder aux comptes
   } else {
     console.warn(
       "No web3 detected. Falling back to http://127.0.0.1:8545. You should remove this fallback when you deploy live",
@@ -84,5 +81,3 @@ window.addEventListener("load", function () {
 
   App.start();
 });
-
-
