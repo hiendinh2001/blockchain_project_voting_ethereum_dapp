@@ -19,6 +19,7 @@ npm install -g truffle@5.1.18
 ```bash
 mkdir Voting
 cd Voting
+npm install -g webpack@4.42.0
 truffle unbox webpack
 ```
 
