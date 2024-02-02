@@ -13,6 +13,7 @@ Le projet Blockchain Voting Ethereum Dapp vise à créer une application de vote
 ### Étape 1 : Installation de Truffle
 ```bash
 npm install -g truffle@5.1.18
+```
 
 ### Étape 2 : Création du Projet
 ```bash
