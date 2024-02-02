@@ -38,7 +38,7 @@ La configuration initiale avec Truffle a établi une base solide pour le dévelo
 
     **Vérification de la Présence du Fichier :**
     ```bash
-    ls contracts
+    dir contracts
     ```
 
 2. **Configuration du Déploiement :** Modification du fichier `2_deploy_contracts.js` dans le répertoire migrations pour spécifier les arguments du contrat et définir le gaz nécessaire pour le déploiement.
