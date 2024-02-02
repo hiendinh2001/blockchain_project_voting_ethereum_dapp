@@ -10,12 +10,12 @@ Le projet Blockchain Voting Ethereum Dapp vise à créer une application de vote
 3. **Intégration de Truffle :** Le framework Truffle a été intégré pour faciliter le développement, le déploiement et les tests de contrats intelligents sur la blockchain Ethereum.
 
 ## Mise en Place du Projet avec Truffle et Configuration des Contrats
-### Étape 1 : Installation de Truffle
+1. **Installation de Truffle :**
 ```bash
 npm install -g truffle@5.1.18
 ```
 
-### Étape 2 : Création du Projet
+2. **Création du Dossier Voting :**
 ```bash
 mkdir Voting
 cd Voting
@@ -23,14 +23,13 @@ npm install -g webpack@4.42.0
 truffle unbox webpack
 ```
 
-### Étape 3 : Suppression des Fichiers Inutiles
+3. **Suppression des Fichiers Inutiles :**
 ```bash
 # Dans le répertoire contracts
 rm ConvertLib.sol MetaCoin.sol
 ```
 
-### Étape 4 : Configuration Initiale
-La configuration initiale avec Truffle a établi une base solide pour le développement ultérieur. La prochaine étape consistera à intégrer le contrat de vote dans cette structure et à le déployer sur la blockchain.
+4. **Configuration Initiale :** La configuration initiale avec Truffle a établi une base solide pour le développement ultérieur. La prochaine étape consistera à intégrer le contrat de vote dans cette structure et à le déployer sur la blockchain.
 
 ## Mise à Jour du Projet
 
