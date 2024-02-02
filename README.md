@@ -5,7 +5,7 @@ Le projet Blockchain Voting Ethereum Dapp vise à créer une application de vote
 
 1. **Développement de l'Application de Vote :** Une application fonctionnelle a été mise en place dans un environnement de développement utilisant Ganache comme simulateur de blockchain et MetaMask comme portefeuille Ethereum.
 
-2. **Candidats Présidentiels :** Les participants sont des amis de classe se portant candidats à la présidence, personnalisant ainsi le projet avec une dimension concrète et amicale.
+2. **Candidats Présidentiels :** Les participants sont des amis de classe se portant candidats à la présidence, personnalisant ainsi le projet avec une dimension concrète.
 
 3. **Intégration de Truffle :** Le framework Truffle a été intégré pour faciliter le développement, le déploiement et les tests de contrats intelligents sur la blockchain Ethereum.
 
