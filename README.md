@@ -20,4 +20,15 @@ npm install -g truffle@5.1.18
 mkdir Voting
 cd Voting
 truffle unbox webpack
+```
+
+### Étape 3 : Suppression des Fichiers Inutiles
+```bash
+# Dans le répertoire contracts
+rm ConvertLib.sol MetaCoin.sol
+```
+
+### Étape 4 : Configuration Initiale
+La configuration initiale avec Truffle a établi une base solide pour le développement ultérieur. La prochaine étape consistera à intégrer le contrat de vote dans cette structure et à le déployer sur la blockchain.
+
 
